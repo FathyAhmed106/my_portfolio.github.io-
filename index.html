@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathy Ahmed Rageh - AI Developer</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --background: #f9f9f9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--background);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            color: var(--light);
+        }
+        
+        section {
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-title, .degree {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+        
+        .company, .university {
+            color: var(--secondary);
+        }
+        
+        .date {
+            color: #777;
+            font-style: italic;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 5px;
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .contact-links a {
+            color: var(--light);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        .contact-links a:hover {
+            color: var(--secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fathy Ahmed Rageh</h1>
+            <p>Computer Vision & NLP Specialist</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Results-driven AI Developer with expertise in computer vision, machine learning, and natural language processing. Specializing in developing AI-powered solutions with 2+ years of experience in building real-world applications including educational monitoring systems, object detection, and sentiment analysis models.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>TensorFlow</li>
+                        <li>Keras</li>
+                        <li>PyTorch</li>
+                        <li>Scikit-learn</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Computer Vision</h3>
+                    <ul>
+                        <li>OpenCV</li>
+                        <li>NumPy</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>NLP</h3>
+                    <ul>
+                        <li>NLTK</li>
+                        <li>spaCy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <div class="job-title">AI Developer</div>
+                <div class="company">EUD Platform</div>
+                <div class="date">Sep 2023 - Jun 2024</div>
+                <ul>
+                    <li>Designed and developed AI-driven educational platform for exam monitoring</li>
+                    <li>Implemented real-time cheating detection system using OpenCV and deep learning</li>
+                    <li>Optimized algorithms to improve system accuracy by analyzing student behavior patterns</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="job-title">Freelance AI Developer</div>
+                <div class="date">2022 - Present</div>
+                <ul>
+                    <li>Developed custom AI solutions including object detection and facial recognition systems</li>
+                    <li>Created sentiment analysis models for text classification</li>
+                    <li>Automated data processing workflows with Python scripts</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-title">AI-Powered Exam Monitoring System</div>
+                    <p>Developed real-time cheating detection using computer vision and student behavior analysis algorithms.</p>
+                    <p><strong>Technologies:</strong> OpenCV, TensorFlow, Python</p>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/exam-monitoring" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Object Detection System</div>
+                    <p>Custom object detection models for client applications with real-time processing capabilities.</p>
+                    <p><strong>Technologies:</strong> YOLO, OpenCV, PyTorch</p>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/object-detection" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Sentiment Analysis API</div>
+                    <p>NLP model for text classification with REST API interface for easy integration.</p>
+                    <p><strong>Technologies:</strong> spaCy, Flask, Transformers</p>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/sentiment-analysis" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="degree">Bachelor's Degree in Artificial Intelligence</div>
+                <div class="university">Kafr El-Sheikh University</div>
+                <div class="date">Sep 2020 - Jun 2024 | GPA: 3.1 (Very Good)</div>
+            </div>
+        </section>
+        
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>TensorFlow Developer Certificate</li>
+                <li>Machine Learning Specialization - Coursera (2023)</li>
+                <li>Deep Learning with TensorFlow - Udemy (2023)</li>
+                <li>NLP with Python for Machine Learning - DataCamp</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <h3>Get In Touch</h3>
+            <div class="contact-links">
+                <a href="mailto:fathyahmed10023@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/fathyahmed106/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="tel:+201212446191">Phone</a>
+            </div>
+            <p>&copy; 2024 Fathy Ahmed Rageh. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
